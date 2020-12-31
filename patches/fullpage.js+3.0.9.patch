@@ -1,0 +1,121 @@
+diff --git a/node_modules/fullpage.js/.DS_Store b/node_modules/fullpage.js/.DS_Store
+new file mode 100644
+index 0000000..c83a44c
+Binary files /dev/null and b/node_modules/fullpage.js/.DS_Store differ
+diff --git a/node_modules/fullpage.js/dist/.DS_Store b/node_modules/fullpage.js/dist/.DS_Store
+new file mode 100644
+index 0000000..ab1c604
+Binary files /dev/null and b/node_modules/fullpage.js/dist/.DS_Store differ
+diff --git a/node_modules/fullpage.js/dist/fullpage.js b/node_modules/fullpage.js/dist/fullpage.js
+index d2fcf05..6d35384 100644
+--- a/node_modules/fullpage.js/dist/fullpage.js
++++ b/node_modules/fullpage.js/dist/fullpage.js
+@@ -134,7 +134,7 @@
+             continuousHorizontal: false,
+             scrollHorizontally: false,
+             interlockedSlides: false,
+-            dragAndMove: false,
++            dragAndMove: false,                     //!
+             offsetSections: false,
+             resetSliders: false,
+             fadingEffect: false,
+@@ -150,7 +150,7 @@
+             //Accessibility
+             keyboardScrolling: true,
+             animateAnchor: true,
+-            recordHistory: true,
++            recordHistory: true,                        //!
+ 
+             //design
+             controlArrows: true,
+@@ -164,13 +164,13 @@
+             responsiveWidth: 0,
+             responsiveHeight: 0,
+             responsiveSlides: false,
+-            parallax: false,
+-            parallaxOptions: {
++            parallax: false,                            //!
++                parallaxOptions: {
+                 type: 'reveal',
+                 percentage: 62,
+                 property: 'translate'
+             },
+-            cards: false,
++            cards: false,                               //!
+             cardsOptions: {
+                 perspective: 100,
+                 fadeContent: true,
+@@ -333,7 +333,7 @@
+         * Defines wheter to record the history for each hash change in the URL.
+         */
+         function setRecordHistory(value, type){
+-            setVariableState('recordHistory', value, type);
++            c('recordHistory', value, type);
+         }
+ 
+         /**
+@@ -488,7 +488,8 @@
+         * Optional `section` param.
+         */
+         function moveSlideLeft(section){
+-            moveSlide('left', section);
++            // moveSlide('left', section);
++            moveSlideLeftUntilLastThenMoveSection(section);
+         }
+ 
+         /**
+@@ -1590,6 +1591,36 @@
+             }
+         }
+ 
++        /**
++         * Slides a slider to the given direction,
++         * Goes to next section if we reach the left end of the slides
++         */
++        
++        function moveSlideLeftUntilLastThenMoveSection(section){
++            var direction="left";
++            var activeSection = section == null ? $(SECTION_ACTIVE_SEL)[0] : section;
++            var slides = $(SLIDES_WRAPPER_SEL, activeSection)[0];
++
++            // nothing should be already sliding
++            if (slideMoving) {
++                return;
++            }
++
++            var currentSlide = $(SLIDE_ACTIVE_SEL, slides)[0];
++            var destiny = null;
++
++            
++            destiny = prevUntil(currentSlide, SLIDE_SEL);
++            if(destiny == null){
++               destiny = moveSectionDown();
++            }
++
++            slideMoving = true && !FP.test.isTesting;
++            landscapeScroll(slides, destiny, direction);
++            
++            console.log("here i am");
++        } 
++
+         /**
+         * Slides a slider to the given direction.
+         * Optional `section` param.
+@@ -1608,13 +1639,16 @@
+ 
+             if(direction === 'left'){
+                 destiny = prevUntil(currentSlide, SLIDE_SEL);
++                if (destiny == null){
++                    moveSectionDown();
++                }
+             }else{
+                 destiny = nextUntil(currentSlide, SLIDE_SEL);
+             }
+ 
+             //isn't there a next slide in the secuence?
+             if(destiny == null){
+-                //respect loopHorizontal settin
++                //respect loopHorizontal setting
+                 if (!options.loopHorizontal) return;
+ 
+                 var slideSiblings = siblings(currentSlide);

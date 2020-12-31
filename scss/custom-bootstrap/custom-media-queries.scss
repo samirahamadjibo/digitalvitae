@@ -1,0 +1,78 @@
+/**
+* Custom media queries requests
+**/
+
+
+@if $enable-grid-classes {
+    .section-container{
+      @include make-section-container();
+    }
+}
+
+.logo-dynamic{
+    display: block;
+    width: 200px;
+}
+  
+  // <lg 
+  @media (max-width: 992px){
+    .h1-dynamic{
+      font-size: $h1-font-size / 1.25 ;
+      line-height:$headings-line-height / 1.5; 
+      letter-spacing: $headings-letter-spacing * 0.9 ;
+    }
+
+    .logo-dynamic{
+        width: 200px;
+    }
+  
+    @if $enable-grid-classes {
+      .section-container{
+        @include make-section-container();
+        @include make-section-container-lg();
+      }
+    }
+  }
+  
+  // <md
+  @media (max-width: 769px){
+    .h1-dynamic{
+      font-size: $h1-font-size / 1.5;
+      line-height:$headings-line-height / 2; 
+      letter-spacing: $headings-letter-spacing * 0.8 ;
+    }
+    .logo-dynamic{
+        width: 150px;
+    }
+
+    @if $enable-grid-classes {
+      .section-container{
+        @include make-section-container();
+        @include make-section-container-md();
+      }
+    }
+  }
+  
+  // <sm
+  @media (max-width: 576px){
+    .h1-dynamic{
+      font-size: $h1-font-size / 1.75;
+      line-height:$headings-line-height / 2.5 ;
+      letter-spacing: $headings-letter-spacing * 0.7 ;
+    }
+
+    .logo-dynamic{
+        width: 150px;
+
+    }
+  
+    .btn{
+        font-size: $btn-font-size-sm;
+    }
+    @if $enable-grid-classes {
+      .section-container{
+        @include make-section-container();
+        @include make-section-container-sm();
+      }
+    }
+}

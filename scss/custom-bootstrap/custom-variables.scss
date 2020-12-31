@@ -1,0 +1,111 @@
+/**
+* Custom bootstrap variables
+**/
+
+$enable-grid-classes: true;
+$grid-gutter-width:   30px;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-color: white ;
+$primary:    white;
+
+
+// Typography
+// 
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: 'Alegreya sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+
+// $font-size-base effects the font size of the body text
+$font-size-base:              1rem * .875; // base size is the equivalent of the regular small
+$font-size-sm:                $font-size-base * .875 ;
+
+$font-weight-light:           100;
+$font-weight-normal:          100;
+$font-weight-bold:            300;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$input-btn-font-family:      $font-family-sans-serif;
+$border-width:                1px ;
+$input-btn-focus-box-shadow:  null;
+$input-btn-focus-color:      rgba(255, 255, 255, 0.5);  
+$input-btn-padding-y:         .375rem;
+$input-btn-padding-x:         1rem;
+
+// Typography
+$enable-responsive-font-sizes: true;
+
+
+$h1-font-size:                $font-size-base * 3;
+$h2-font-size:                $font-size-base * 2.75;
+$h3-font-size:                $font-size-base * 2.5 ;
+$h4-font-size:                $font-size-base * 2.25;
+$h5-font-size:                $font-size-base * 2 ;
+$h6-font-size:                $font-size-base * 1.75;
+
+
+$spacer: 1rem !default;
+$headings-font-weight:        100;
+$headings-line-height:        125px;
+$headings-color:              null !default;
+$headings-font-family:        null !default;
+$headings-margin-bottom:      $spacer / 2 !default;
+$headings-letter-spacing:     25px;
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6, 
+.h1-dynamic {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  letter-spacing: $headings-letter-spacing;
+}
+
+.h1-dynamic {font-size: $h1-font-size}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$content-padding-top:     100px;
+$content-padding-bottom:  200px;
+$content-padding-left:    200px;
+$content-padding-right:   200px;
+
+$input-btn-padding-y-sm:      .25rem !default;
+$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-font-size-sm:      $font-size-sm ;
+
+
+// Spacers 
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 3.5),
+    7: ($spacer * 4),
+    8: ($spacer * 5),
+  ),
+  $spacers
+);
+
