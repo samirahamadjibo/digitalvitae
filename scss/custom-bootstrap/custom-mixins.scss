@@ -31,8 +31,8 @@
   
   
   @mixin make-section-container-sm($gutter: $grid-gutter-width) {
-    padding-top: $content-padding-top -25px;
-    padding-bottom:  $content-padding-bottom;
+    padding-top: $content-padding-top -100px;
+    padding-bottom:  $content-padding-bottom + 75px;
     padding-right: ($gutter / 2 ) + ($content-padding-right - 150px);
     padding-left:  ($gutter / 2 ) + ($content-padding-left  - 150px);
   }

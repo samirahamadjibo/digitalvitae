@@ -1,0 +1,9 @@
+$filter-index:      2;
+$background-index:  1;
+
+
+
+.darken{
+    background-color: rgba(0, 0, 0, 0.63);
+    z-index:          $filter-index;
+}

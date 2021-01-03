@@ -12,6 +12,7 @@ $grid-gutter-width:   30px;
 $body-color: white ;
 $primary:    white;
 
+$border-radius:               .25rem !default;
 
 // Typography
 // 
@@ -35,7 +36,7 @@ $font-weight-bold:            300;
 $input-btn-font-family:      $font-family-sans-serif;
 $border-width:                1px ;
 $input-btn-focus-box-shadow:  null;
-$input-btn-focus-color:      rgba(255, 255, 255, 0.5);  
+$input-btn-focus-color:      rgba(255, 255, 255, 0.247);  
 $input-btn-padding-y:         .375rem;
 $input-btn-padding-x:         1rem;
 
@@ -89,6 +90,10 @@ $content-padding-right:   200px;
 $input-btn-padding-y-sm:      .25rem !default;
 $input-btn-padding-x-sm:      .5rem !default;
 $input-btn-font-size-sm:      $font-size-sm ;
+$input-border-color:          rgba(255, 255, 255, 0.445); 
+$btn-border-radius:           $border-radius/2;
+
+$link-hover-decoration:       none;
 
 
 // Spacers 

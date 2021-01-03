@@ -9,8 +9,12 @@
 
 // overrides of slide arrows
 .fp-controlArrow.fp-prev {
-
+    width: 0;
+    height: 0;
+    border: none;
 }
 .fp-controlArrow.fp-next {
-
+    width: 0;
+    height: 0;
+    border: none;
 }
