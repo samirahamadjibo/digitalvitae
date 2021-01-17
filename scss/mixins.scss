@@ -1,0 +1,5 @@
+@for $i from 0 to 2048{
+    .set-width-#{$i}{
+        min-width: $i * 1px !important;
+    }
+}

@@ -4,7 +4,7 @@
 
 $enable-grid-classes: true;
 $grid-gutter-width:   30px;
-
+$spacer: 1rem !default;
 
 // Body
 //
@@ -43,36 +43,27 @@ $input-btn-padding-x:         1rem;
 // Typography
 $enable-responsive-font-sizes: true;
 
+$h0-font-size:                $font-size-base * 3;
+$h0-letter-spacing:           25px;
+$h0-line-height:              125px;
+$h0-font-weight:              100px;
 
-$h1-font-size:                $font-size-base * 3;
-$h2-font-size:                $font-size-base * 2.75;
-$h3-font-size:                $font-size-base * 2.5 ;
-$h4-font-size:                $font-size-base * 2.25;
-$h5-font-size:                $font-size-base * 2 ;
-$h6-font-size:                $font-size-base * 1.75;
-
-
-$spacer: 1rem !default;
-$headings-font-weight:        100;
-$headings-line-height:        125px;
-$headings-color:              null !default;
-$headings-font-family:        null !default;
 $headings-margin-bottom:      $spacer / 2 !default;
-$headings-letter-spacing:     25px;
+$headings-font-family:        null !default;
+$headings-font-weight:        400 ;
+$headings-line-height:        1.2 !default;
+$headings-color:              null !default;
 
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6, 
-.h1-dynamic {
-  margin-bottom: $headings-margin-bottom;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  color: $headings-color;
-  letter-spacing: $headings-letter-spacing;
-}
 
-.h1-dynamic {font-size: $h1-font-size}
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base * 1;
+
 
 $grid-breakpoints: (
   xs: 0,

@@ -13,9 +13,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     new fullpage('#fullpage', {
       autoScrolling:true,
-      sectionsColor: ['black', 'black', '#E0E0E0'],
+      sectionsColor: ['black', 'black', '#141414'],
+      anchors:['1srt', '2nd'],
       scrollHorizontally: true,
-      navigation: true,
+      navigation: false,
       navigationPosition: 'left',
     });
   }

@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+
+.cursive{
+    font-family: $font-family-cursive;
+    font-size:larger;
+}
+
+.input-color-grey{
+    width: 30vw;
+    border: none;
+    background-color: #141414;
+}
+
+.h1-larger{
+    font-size: $h1-larger-font-size;
+}
+.h1-xlarger{
+    font-size: $h1-xlarger-font-size;
+}
+.h1-xxlarger{
+    font-size: $h1-xxlarger-font-size;
+}
+
+.lsp-medium{
+    letter-spacing: $lsp-medium;
+}
+.lsp-large{
+    letter-spacing: $lsp-large;
+}
+.lsp-xlarge{
+    letter-spacing: $lsp-xlarge;
+}
+.lsp-xxlarge{
+    letter-spacing: $lsp-xlarge;
+}
+
+
+.nav-item{
+    
+}

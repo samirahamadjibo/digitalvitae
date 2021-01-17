@@ -16,10 +16,10 @@
   
   // <lg 
   @media (max-width: 992px){
-    .h1-dynamic{
-      font-size: $h1-font-size / 1.25 ;
-      line-height:$headings-line-height / 1.5; 
-      letter-spacing: $headings-letter-spacing * 0.9 ;
+    .h0{
+      font-size: $h0-font-size / 1.25 ;
+      line-height:$h0-line-height / 1.5; 
+      letter-spacing: $h0-letter-spacing * 0.9 ;
     }
 
     .logo-dynamic{
@@ -36,10 +36,10 @@
   
   // <md
   @media (max-width: 769px){
-    .h1-dynamic{
-      font-size: $h1-font-size / 1.5;
-      line-height:$headings-line-height / 2; 
-      letter-spacing: $headings-letter-spacing * 0.8 ;
+    .h0{
+      font-size: $h0-font-size / 1.5;
+      line-height:$h0-line-height / 2; 
+      letter-spacing: $h0-letter-spacing * 0.8 ;
     }
     .logo-dynamic{
         width: 150px;
@@ -55,10 +55,10 @@
   
   // <sm
   @media (max-width: 576px){
-    .h1-dynamic{
-      font-size: $h1-font-size / 1.75;
-      line-height:$headings-line-height / 2.5 ;
-      letter-spacing: $headings-letter-spacing * 0.7 ;
+    .h0{
+      font-size: $h0-font-size / 1.75;
+      line-height:$h0-line-height / 2.5 ;
+      letter-spacing: $h0-letter-spacing * 0.7 ;
     }
 
     .logo-dynamic{
