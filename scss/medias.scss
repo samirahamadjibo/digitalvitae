@@ -1,4 +1,4 @@
-@for $i from 0 to 100{
+@for $i from 0 to 768{
     @media (max-width: $i*10 + 10){
         .overflow-x-scroll{
             overflow-x: scroll !important;
