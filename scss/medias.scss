@@ -1,13 +1,7 @@
-@for $i from 0 to 768{
-    @media (max-width: $i*10 + 10){
-        .overflow-x-scroll{
-            overflow-x: scroll !important;
-            width: $i*10 !important;
-        } 
-    }  
-}
+
 /**
-When device heignt is very small, we reduce the margins and paddings in the y axis
+When device heignt is very small, we reduce the margins and paddings in the y axis 
+** !!!
 **/
 @media(max-height: 600){
     @for $i from 2 to 5{

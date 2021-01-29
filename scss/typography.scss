@@ -1,25 +1,24 @@
 @import "./variables.scss";
 
-
+/** 
+** General typography
+**/
 .cursive{
     font-family: $font-family-cursive;
-    font-size:larger;
 }
 
-.input-color-grey{
-    width: 30vw;
-    border: none;
-    background-color: #141414;
+.strict{
+    font-family: $font-family-strict;
 }
 
 .h1-larger{
-    font-size: $h1-larger-font-size;
+    font-size: $h1-larger;
 }
 .h1-xlarger{
-    font-size: $h1-xlarger-font-size;
+    font-size: $h1-xlarger;
 }
 .h1-xxlarger{
-    font-size: $h1-xxlarger-font-size;
+    font-size: $h1-xxlarger;
 }
 
 .lsp-medium{
@@ -34,3 +33,13 @@
 .lsp-xxlarge{
     letter-spacing: $lsp-xlarge;
 }
+
+/**
+** imputs & text areas
+**/
+.input-theme-dark{
+    border: none;
+    background-color: #141414;
+    color: #BCBCBC;
+}
+

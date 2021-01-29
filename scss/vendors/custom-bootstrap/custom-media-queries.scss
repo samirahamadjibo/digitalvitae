@@ -5,6 +5,7 @@
 
 @if $enable-grid-classes {
     .section-container{
+      @include make-container();
       @include make-section-container();
     }
 }
@@ -28,7 +29,6 @@
   
     @if $enable-grid-classes {
       .section-container{
-        @include make-section-container();
         @include make-section-container-lg();
       }
     }
@@ -47,7 +47,6 @@
 
     @if $enable-grid-classes {
       .section-container{
-        @include make-section-container();
         @include make-section-container-md();
       }
     }
@@ -71,7 +70,6 @@
     }
     @if $enable-grid-classes {
       .section-container{
-        @include make-section-container();
         @include make-section-container-sm();
       }
     }

@@ -43,10 +43,6 @@ $input-btn-padding-x:         1rem;
 // Typography
 $enable-responsive-font-sizes: true;
 
-$h0-font-size:                $font-size-base * 3;
-$h0-letter-spacing:           25px;
-$h0-line-height:              125px;
-$h0-font-weight:              100px;
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
@@ -54,6 +50,10 @@ $headings-font-weight:        400 ;
 $headings-line-height:        1.2 !default;
 $headings-color:              null !default;
 
+$h0-font-size:                $font-size-base * 3;
+$h0-letter-spacing:           25px;
+$h0-line-height:              inherit;
+$h0-font-weight:              100px;
 
 
 

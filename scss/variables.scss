@@ -2,10 +2,11 @@
 
 // Typography
 $font-family-cursive: 'Redressed', 'Alegreya sans Bold', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+$font-family-strict: 'Shadows Into Light', cursive;
 
-$h1-larger-font-size:       $h1-font-size + 0.5rem;
-$h1-xlarger-font-size:      $h1-font-size + 1rem;
-$h1-xxlarger-font-size:     $h1-font-size + 1.25rem;
+$h1-larger                  :$h1-font-size + 0.5rem;
+$h1-xlarger                 :$h1-font-size + 1rem;
+$h1-xxlarger                :$h1-font-size + 1.25rem;
 
 $lsp-medium                 :1px;
 $lsp-large                  :2px;

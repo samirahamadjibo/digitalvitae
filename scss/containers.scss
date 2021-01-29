@@ -1,34 +1,45 @@
+/**
+** Text and images wraper
+**/
 .text-wrapper{
     position: absolute;
     top: 0;
     bottom: 0;
 }
 
-.darken-2{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba($color: #000000, $alpha: 0.58);
+.title-text{
+
 }
 
-.media-wrapper{
- min-width: 100vw;
- min-height: 100vh;
- display:flex;
- justify-content: center;
- align-items: center;
+.text-detail{
+
 }
 
-.fixed-right{
-    height: 100%;
+.bg-image-wrapper{
+position: fixed;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+background-size: cover;
+object-fit: cover;
+}
+
+
+
+/**
+ ** Other containers
+**/
+.filter{
     position: fixed;
-    right: 10px;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.75);
 }
 
-
-/** overflow-x **/
+// scroll when overflowing on x axis
 .overflow-x-scroll{
     width: 100%;
     overflow-x: scroll;
@@ -39,4 +50,3 @@
         display: none;
     }
 }
-
