@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
   constructor() {
 
     // for more details on config options please visit fullPage.js docs
-    this.config = {
 
+     /*
       // fullpage options
       licenseKey: 'YOUR LICENSE KEY HERE',
       menu: '#menu',
@@ -35,13 +35,14 @@ export class HomeComponent implements OnInit {
       afterLoad: (origin, destination, direction) => {
         console.log(origin.index);
       }
-    };
-  }
+    };*/
+  
+}
+}
 
+  /*
   getRef(fullPageRef) {
     this.fullpage_api = fullPageRef;
   }
+  */
 
-
-
-}

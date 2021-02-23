@@ -5,10 +5,26 @@
 .btn {
     text-transform: uppercase;
     letter-spacing: 2px;
-    
+    border: 1px solid  #ffffff85;
 }
 
+//
+// Link buttons
+//
+
 .btn-link{
-    padding-bottom: 15px;
-    overflow-wrap: break-word;
+    text-decoration: $link-decoration;
+    border: none;
+
+    @include hover() {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+      }
+    
+      &:focus,
+      &.focus {
+        text-decoration: $link-hover-decoration;
+      }
 }
+
+
