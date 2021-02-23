@@ -1,14 +1,86 @@
-@import "./vendors/custom-bootstrap/custom-variables.scss";
+// Grid, Gutters & Spacers
+$enable-grid-classes: true;
+$grid-gutter-width:   30px;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 3.5),
+    7: ($spacer * 4),
+    8: ($spacer * 5),
+  ),
+  $spacers
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// Body
+$body-bg:    black;
+$body-color: white ;
+$primary:    white;
+$footer-color:  #BABABA;
+
 
 // Typography
+$font-family-sans-serif: 'Alegreya sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
 $font-family-cursive: 'Redressed', 'Alegreya sans Bold', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
-$font-family-strict: 'Shadows Into Light', cursive;
+$font-family-strict: 'Shadows Into Light', 'Alegreya sans', system-ui;
 
-$h1-larger                  :$h1-font-size + 0.5rem;
-$h1-xlarger                 :$h1-font-size + 1rem;
-$h1-xxlarger                :$h1-font-size + 1.25rem;
+$cursor-hover-simple: url(../src/assets/icons/cursor_hover_simple.png), pointer;
+$cursor-hover-random-page: url(../src/assets/icons/cursor_hover_random_page.png), pointer;
 
-$lsp-medium                 :1px;
-$lsp-large                  :2px;
-$lsp-xlarge                 :3px;
-$lsp-xxlarge                :4px;                 
+$enable-responsive-font-sizes:          true;
+$font-size-base:              1rem; 
+$font-size-sm:                $font-size-base;
+$font-weight-light:           100;
+$font-weight-normal:          100;
+$font-weight-bold:            300;
+
+$headings-margin-bottom:      $spacer / 2 !default;
+$headings-font-family:        null !default;
+$headings-font-weight:        100 ;
+$headings-line-height:        1.2 !default;
+$headings-color:              null !default;
+
+$h1-font-size:                $font-size-base * 5;
+$h2-font-size:                $font-size-base * 4.5;
+$h3-font-size:                $font-size-base * 4;
+$h4-font-size:                $font-size-base * 3.5;
+$h5-font-size:                $font-size-base * 2.5;
+$h6-font-size:                $font-size-base * 1.5;
+
+
+// Buttons + Forms
+$input-btn-font-family:      $font-family-sans-serif;
+$border-width:                1px ;
+$border-radius:     .25rem !default;
+$input-btn-focus-box-shadow:  null;
+$input-btn-focus-color:      rgba(255, 255, 255, 0.247);  
+$input-btn-padding-y:         .375rem;
+$input-btn-padding-x:         1rem;
+
+
+$input-btn-padding-y-sm:      .25rem !default;
+$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-font-size-sm:      $font-size-sm ;
+$input-border-color:          rgba(255, 255, 255, 0.445); 
+$btn-border-radius:           $border-radius/2;
+
+$link-hover-decoration:       none;
+
+
+
+
