@@ -2,9 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
-This is a web application for the Digital Vitae society. It will display Digital vitae's image and introduce to it's founders. Il will also be a mean to ask for freelance services and will contain articles written by the owners.
+This is a web application for the Digital Vitae society. It will display Digital vitae's image and introduce to it's owner. Il will also be a mean to ask for freelance services and will contain articles written by the owners.
 
-This web application uses @alvarotrigo 's plugin [Fullpage](https://github.com/alvarotrigo/fullPage.js) to display the site as a fullpaged scrollable sections and slides.
+This web application uses @alvarotrigo 's plugin [Fullpage.js](https://github.com/alvarotrigo/fullPage.js) to display the site as a fullpaged scrollable sections and slides.
 It also uses common web developping tools like bootstrap and sass precompiler.
 
 ## A snapshot of current (non final) visuals
