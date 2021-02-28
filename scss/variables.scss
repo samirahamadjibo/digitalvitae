@@ -3,18 +3,20 @@ $enable-grid-classes: true;
 $grid-gutter-width:   30px;
 
 $spacer: 1rem !default;
-$spacers: () !default;
+$spacers: (
+  6: ($spacer * 4),
+  7: ($spacer * 4.5),
+  8: ($spacer * 5),
+  9: ($spacer * 6)
+  ) ;
 $spacers: map-merge(
-  (
+  ( 
     0: 0,
     1: ($spacer * .25),
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
     5: ($spacer * 3),
-    6: ($spacer * 3.5),
-    7: ($spacer * 4),
-    8: ($spacer * 5),
   ),
   $spacers
 );
@@ -37,7 +39,7 @@ $footer-color:  #BABABA;
 // Typography
 $font-family-sans-serif: 'Alegreya sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
 $font-family-cursive: 'Redressed', 'Alegreya sans Bold', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
-$font-family-strict: 'Shadows Into Light', 'Alegreya sans', system-ui;
+$font-family-monospace: 'Josefin Sans', sans-serif;
 
 $cursor-hover-simple: url(../src/assets/icons/cursor_hover_simple.png), pointer;
 $cursor-hover-random-page: url(../src/assets/icons/cursor_hover_random_page.png), pointer;
@@ -46,19 +48,19 @@ $enable-responsive-font-sizes:          true;
 $font-size-base:              1rem; 
 $font-size-sm:                $font-size-base;
 $font-weight-light:           100;
-$font-weight-normal:          100;
-$font-weight-bold:            300;
+$font-weight-normal:          200;
+$font-weight-bold:            400;
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
-$headings-font-weight:        100 ;
+$headings-font-weight:        $font-weight-bold;
 $headings-line-height:        1.2 !default;
 $headings-color:              null !default;
 
 $h1-font-size:                $font-size-base * 5;
-$h2-font-size:                $font-size-base * 4.5;
-$h3-font-size:                $font-size-base * 4;
-$h4-font-size:                $font-size-base * 3.5;
+$h2-font-size:                $font-size-base * 4;
+$h3-font-size:                $font-size-base * 3.5;
+$h4-font-size:                $font-size-base * 2;
 $h5-font-size:                $font-size-base * 2.5;
 $h6-font-size:                $font-size-base * 1.5;
 
