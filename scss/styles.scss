@@ -305,3 +305,51 @@ p{
   border-radius: 100px;
 }
 
+.color-white{
+  color: white;
+}
+
+.footer{
+  background-color: $primary;
+  color: white;
+}
+
+svg{
+  margin: -1px -1px -1px -1px;
+}
+
+.contact-wave{
+  // position: relative;
+  // top: 0;
+  // left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.contact-wave-up{
+  position: absolute;
+  width: 100%;
+
+}
+
+.contact-section{
+
+}
+
+.contact-content-1{
+  margin-top: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.contact-content-2{
+  background-color: #6F2321;
+}
+.contact-text{
+  // position: absolute;
+  position: relative;
+  top: 0;
+  left: 0;
+}
