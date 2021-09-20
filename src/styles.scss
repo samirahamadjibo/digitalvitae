@@ -1,3 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "../scss/styles.scss";
+
+body{
+  background: rgb(31,29,47);
+background: -moz-linear-gradient(135deg, rgba(31,29,47,1) 0%, rgba(16,15,33,1) 6%, rgba(28,23,46,1) 43%, rgba(101,34,31,1) 83%, rgba(74,20,41,1) 100%);
+background: -webkit-linear-gradient(135deg, rgba(31,29,47,1) 0%, rgba(16,15,33,1) 6%, rgba(28,23,46,1) 43%, rgba(101,34,31,1) 83%, rgba(74,20,41,1) 100%);
+background: linear-gradient(135deg, rgba(31,29,47,1) 0%, rgba(16,15,33,1) 6%, rgba(28,23,46,1) 43%, rgba(101,34,31,1) 83%, rgba(74,20,41,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f1d2f",endColorstr="#4a1429",GradientType=1);
+}

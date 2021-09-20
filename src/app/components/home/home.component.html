@@ -1,162 +1,363 @@
-<!-- sections layout-->
-<div class="fixed-top px-6 pt-6 d-flex justify-content-center justify-content-lg-start">
-    <i class="bi bi-house-door nav-icons px-2"> </i>
-    <i class="bi bi-chevron-double-down nav-icons px-2"> </i>
-</div>
-<!--!sections layout-->
-
-<div fullpage id="fullpage">
-    <div class="section">
-        <!-- first section layout -->
-        <div class="fixed-top pt-3 pt-lg-8 pr-lg-8 d-flex flex-row justify-content-center justify-content-lg-end">
-            <i class="bi bi-github pr-3" style="color: white; font-size: 1rem"></i>
-            <i class="bi bi-twitter pr-3" style="color: white; font-size: 1rem"></i>
-            <i class="bi bi-instagram pr-3" style="color: white; font-size: 1rem"></i>
-            <i class="bi bi-instagram pr-3" style="color: white; font-size: 1rem"></i>
-        </div>
-        <!-- ! first section layout -->
-
-        <div class="slide">
-            <div class="container-fluid">
-                <div class="row d-flex flex-row justify-content-center"> <div class="divider"></div></div>
-                <div class="row pt-5 pt-xl-0">
-                    <div class="logo col-12 col-lg-6 pb-5 pb-lg-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="d-flex flex-row">
-                            <img class="logo-letter D" src="../../../assets/logo/D.png">
-                            <img class="logo-letter I" src="../../../assets/logo/I.png">
-                            <img class="logo-letter G" src="../../../assets/logo/G.png">
-                            <img class="logo-letter I" src="../../../assets/logo/I.png">
-                            <img class="logo-letter T" src="../../../assets/logo/T.png">
-                            <img class="logo-letter A" src="../../../assets/logo/A.png">
-                            <img class="logo-letter L" src="../../../assets/logo/L.png">
-
-                        </div>
-                        <h6 class="logo-text monospace pt-2 pt-lg-3">vitae.</h6>
-                    </div>
-                    <div class="col-12 col-lg-6 px-8 pt-5 pt-lg-0" [@fadeInOut]="activeSlideIndex == 0 ? 'fadedIn' : 'fadedOut'" >
-                        <h3 class="cursive text-center">Hello,<br>I'm Samira<br>and this is<br>/digital vite/</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="container-fluid">
-                <div class="row d-flex flex-row justify-content-center"> <div class="divider"></div></div>
-                <div class="row pt-5 pt-xl-0">
-                    <div class="logo col-12 col-lg-6 pb-5 pb-lg-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="d-flex flex-row">
-                            <img class="logo-letter D" src="../../../assets/logo/D.png">
-                            <img class="logo-letter I" src="../../../assets/logo/I.png">
-                            <img class="logo-letter G" src="../../../assets/logo/G.png">
-                            <img class="logo-letter I" src="../../../assets/logo/I.png">
-                            <img class="logo-letter T" src="../../../assets/logo/T.png">
-                            <img class="logo-letter A" src="../../../assets/logo/A.png">
-                            <img class="logo-letter L" src="../../../assets/logo/L.png">
-                        </div>
-                    <h6 class="logo-text monospace pt-2 pt-lg-3">vitae.</h6>
-                    </div>
-                    <div class="col-12 col-lg-6 px-8 pt-5 pt-lg-0" [@fadeInOut]="activeSlideIndex == 1 ? 'fadedIn' : 'fadedOut'" >
-                        <h3 class="cursive text-center">I develop<br>for the web<br>and<br>deeper.</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<div class="section">
-    <div class="slide">
-        <div class="container pt-8">
-            <div class="w-max pb-5 d-flex justify-content-center">
-                <h3 class="cursive text-center fixed-top pt-8" style="top:100vh;">The projects</h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <div class="container-fluid h-max">
-            <div class="row" style="height: 20vh;">
-                <div class="col-6 pt-8 pt-lg-9 px-1 d-flex flex-row justify-content-end">
-                    <h3 class="cursive">Info</h3>
-                </div>
-                <div class="col-6 pt-8 pt-lg-9 px-1 bg-lg-color">
-                    <h3 class="cursive text-start">time</h3>
-                </div>
-            </div>
-            <div class="row portrait-wrapper" style="height: 80vh;">
-                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center px-3 px-lg-7">
-                    <h6 class="text-center pb-3">My name is Samira, I'm 22</h6>
-                    <p class="text-center">I’m a student in software engineering.<br>For  those who wonder, I’m passioned by and I welcome you bla blas</p>
-                    <p class="text-center">I want to become full stack enjoy myself blablaba</p>
-                </div>
-                <div class="col-12 col-lg-6 bg-color d-flex flex-column justify-content-center align-items-center">
-                    <img class="portrait pastille py-3" src="../../../assets/images/portrait.png">
-                    <p class="quote pt-2 pt-lg-5">“Make something out of each day, unless it’s anime time“</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="tag d-flex align-items-center justify-content-center">
+  <div class="px-4 fs-sm">2021 © Digital <br> Vitae Studio </div>
+  <div class="line"></div>
 </div>
 
-<div class= "section">
-    <div class="container d-flex flex-column justify-content-end">
-        <h3 class="cursive ml-2 my-5 align-self-center">Contact us</h3>
-        <div class="d-flex pb-5 flex-row justify-content-start overflow-x-scroll">
-            <div class="pr-5" style="min-width:600px">
-                <form-group>
-                    <div class="d-flex flex-row"> 
-                        <div class="mx-2">
-                            <label for="name-contact" class="">NOM</label>
-                            <input class="form-control" id="name-contact" type="text">
-                        </div>
-                        <div class="mx-2 flex-grow-1">
-                            <label for="email-contact" class="">EMAIL</label>
-                            <input class="form-control" id="email-contact" type="email">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mx-2 mt-4">
-                            <textarea style="resize:none" class="form-control " rows="10"></textarea>
-                        </div>
-                    </div>
-                </form-group>
-            </div>
-            
-            <div class="d-flex flex-column justify-content-end px-5" style="min-width:400px">
-                <div class="row d-flex flex-column">
-                    <div><p>Credits:</p></div>
-                    <div>
-                        <li>Fullpage by @avogadro</li>
-                        <li>My mama & papa</li>
-                    </div>
-                    <div class="pb-3">
-                        <p>This website was made by Samira HAMA DJIBO for DIGITAL VITAE</p>
-                    </div>
-                    <div>
-                        <p class="pb-0 mb-1">Come say hi!</p>
-                        <div class="d-flex flex-row">
-                        <i class="bi bi-github  pr-3" style="color: white; font-size: 1rem"></i>
-                        <i class="bi bi-twitter pr-3" style="color: white; font-size: 1rem"></i>
-                        <i class="bi bi-instagram pr-3" style="color: white; font-size: 1rem"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="my-4"></div>
-        <div class="container-fluid mt-5 d-flex flex-column align-items-center">
-            <div class="row">
-                <img style="width:125px" class="mx-auto" src="../../../../assets/logos/logo-white.png">
-            </div>
-           
-            
-
-            <div class="row mt-1">
-                <p class="foot-size text-center">2021 DIGITAL VITAE © all rights reserved. Thanks to all actors of Digital Vitae to my mama, my papa.. hey wait you’re not supposed to read this!</p>
-            </div>
-        </div>
+<!----------------- header ------------------ -->
+<header class="navbar container-fluid py-3 px-5">
+  <div class="navbar-mobile-top">
+    <div class="d-flex justify-content-end px-2 top-navbar">
+      <span class="a px-5 fs-sm ">The studio</span>
+      <span class="a px-5 fs-sm" routerLink="/blog">Projects</span>
+      <span class="a px-5 fs-sm" routerLink="/cv">Contact</span>
+      <span class="a px-5 fs-sm" routerLink="/contact">Feever -></span>
     </div>
-</div>
+
+     <button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+        <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
+     </button>
+  </div>
+
+  <!-- logo  -->
+
+</header>
+
+<div class="container-fluid headline-section pt-2">
+  <div class="row height-fill d-flex align-items-start pt-5">
+    <div class="col-md-1"></div>
+    <div class="col-11 col-md-6 px-md-5 pl-4">
+      <div class="h2">Hi! I'm Samira.</div>
+      <div class="h3 subheading pb-3">I am a software developper and a web designer & programmer.</div>
+
+      <div class="fs-lg pt-5 pb-3">I created digital vitae studio to give life to amusing / interesting / beautiful projects. </div>
+
+      <div class="d-flex pt-5">
+        <div class="btn-stroked mr-2">See the studio</div>
+        <div class="btn-accent ml-2">Hire me</div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div id="slideMoveCallback"></div>
+
+<div class="py-4"></div>
+
+<!-- WHO ARE WE SECTION -->
+<div class="container-fluid pb-5">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center pt-4">
+      <div class="h4 pb-0">Who are we</div>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+      <div class="col-8 col-md-6 col-12 px-5 px-md-0">
+        <div class="h2 quote-up text-left">”</div>
+        <div class="quote-card ">
+          <div class="text-center px-md-5"> Programmers often do stuff for fun, with no direct use to the community and sometimes they
+            changes the world fuelled
+            with coffee and programming jokes. I wanted the Digital vitae studio to be the safe home for all developers crush
+            projects because wether or not they make money, they sure nourish the mind of people somewhere on the earth.</div>
+        </div>
+        <div class="h2 quote-down text-right">”</div>
+      </div>
+  </div>
+</div>
+
+<div class="py-4"></div>
+
+<!--OUR PROJECTS SECTION-->
+<div class="container-fluid">
+  <div class="row pb-5 d-flex justify-content-center align-items-center">
+    <div class="col-2 h-line"></div>
+    <div class="col-6 col-md-4">
+      <div class="h3 text-center px-2">Our projects</div>
+    </div>
+    <div class="col-2 h-line"></div>
+  </div>
+</div>
+
+<div class="row pt-2 d-flex justify-content-center flex-column flex-md-row align-items-center">
+  <div class="col-8 col-sm-4 col-md-3 col-xl-2 mx-4 my-4 my-md-0">
+    <div class="card-flag visibility-hidden">
+       <span>comming up!</span>
+    </div>
+
+    <div class="theme-card">
+      <div class="d-flex flex-column">
+        <div class="h4 pb-3">What did you sayy?</div>
+        <div class="pb-3">A much needed french version of an English classic website concept.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8 col-sm-4 col-md-3 col-xl-2 mx-4 my-4 my-md-0">
+    <span class="card-flag">comming up!</span>
+    <div class="theme-card">
+      <div class="d-flex flex-column">
+        <div class="h4 pb-3">What did you sayy?</div>
+        <div class="pb-3">A much needed french version of an English classic website concept.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8 col-sm-4 col-md-3 col-xl-2 mx-4 my-4 my-md-0">
+    <span class="card-flag">comming up!</span>
+    <div class="theme-card">
+      <div class="d-flex flex-column">
+        <div class="h4 pb-3">What did you sayy?</div>
+        <div class="pb-3">A much needed french version of an English classic website concept.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-5"></div>
+<div class="py-5"></div>
+<div class="py-5"></div>
+
+<!--ABOUT THE STUDIO SECTION-->
+
+<div class="container pt-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-11 col-md-10 section-card">
+      <div class="h3 pt-4 px-4">About the studio..</div>
+      <div class="logo py-5 my-5"></div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 px-4">
+          Here in Digital Vitae Studio we aim on letting every one give life to that one idea in their head, wether it will change
+          the world or just be a meme on reddit
+
+          If you want to be part of the journey, contact me here !
+        </div>
+        <div class="col-12 col-md-6 px-4">
+          Here in Digital Vitae Studio we aim on letting every one give life to that one idea in their head, wether it will change
+          the world or just be a meme on reddit
+
+          If you want to be part of the journey, contact me here !
+        </div>
+        <div class="col-12 pt-5 d-flex flex-column justify-content-center align-items-center">
+          You want to be a part of the journey?
+          <div class="btn-accent mt-4">Join !</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="py-5"></div>
+
+
+<div class="container-fluid pb-5">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center pt-4">
+      <div class="h4 pb-0">Who are we</div>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+      <div class="col-8 col-md-6 col-12 px-5 px-md-0">
+        <div class="h2 quote-up text-left">”</div>
+        <div class="quote-card ">
+          <div class="text-center px-md-5"> Programmers often do stuff for fun, with no direct use to the community and sometimes they
+            changes the world fuelled
+            with coffee and programming jokes. I wanted the Digital vitae studio to be the safe home for all developers crush
+            projects because wether or not they make money, they sure nourish the mind of people somewhere on the earth.</div>
+        </div>
+        <div class="h2 quote-down text-right">”</div>
+      </div>
+  </div>
+</div>
+
+<div class="py-4"></div>
+
+<!--OUR PROJECTS SECTION-->
+<div class="container-fluid">
+  <div class="row pb-5 d-flex justify-content-center align-items-center">
+    <div class="col-2 h-line"></div>
+    <div class="col-6 col-md-4">
+      <div class="h3 text-center px-2">Our projects</div>
+    </div>
+    <div class="col-2 h-line"></div>
+  </div>
+</div>
+
+<div class="row pt-2 d-flex justify-content-center flex-column flex-md-row align-items-center">
+  <div class="col-8 col-sm-4 col-md-3 col-xl-2 mx-4 my-4 my-md-0">
+    <div class="card-flag visibility-hidden">
+       <span>comming up!</span>
+    </div>
+
+    <div class="theme-card">
+      <div class="d-flex flex-column">
+        <div class="h4 pb-3">What did you sayy?</div>
+        <div class="pb-3">A much needed french version of an English classic website concept.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8 col-sm-4 col-md-3 col-xl-2 mx-4 my-4 my-md-0">
+    <span class="card-flag">comming up!</span>
+    <div class="theme-card">
+      <div class="d-flex flex-column">
+        <div class="h4 pb-3">What did you sayy?</div>
+        <div class="pb-3">A much needed french version of an English classic website concept.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8 col-sm-4 col-md-3 col-xl-2 mx-4 my-4 my-md-0">
+    <span class="card-flag">comming up!</span>
+    <div class="theme-card">
+      <div class="d-flex flex-column">
+        <div class="h4 pb-3">What did you sayy?</div>
+        <div class="pb-3">A much needed french version of an English classic website concept.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-5"></div>
+<div class="py-5"></div>
+<div class="py-5"></div>
+
+<!--ABOUT THE STUDIO SECTION-->
+
+<div class="container pt-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-11 col-md-10 section-card">
+      <div class="h3 pt-4 px-4">About the studio..</div>
+      <div class="logo py-5 my-5"></div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 px-4">
+          Here in Digital Vitae Studio we aim on letting every one give life to that one idea in their head, wether it will change
+          the world or just be a meme on reddit
+
+          If you want to be part of the journey, contact me here !
+        </div>
+        <div class="col-12 col-md-6 px-4">
+          Here in Digital Vitae Studio we aim on letting every one give life to that one idea in their head, wether it will change
+          the world or just be a meme on reddit
+
+          If you want to be part of the journey, contact me here !
+        </div>
+        <div class="col-12 pt-5 d-flex flex-column justify-content-center align-items-center">
+          You want to be a part of the journey?
+          <div class="btn-accent mt-4">Join !</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="py-5"></div>
+
+<div class="container-fluid pb-5">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center pt-4">
+      <div class="h4 pb-0">Who are we</div>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+      <div class="col-8 col-md-6 col-12 px-5 px-md-0">
+        <div class="h2 quote-up text-left">”</div>
+        <div class="quote-card ">
+          <div class="text-center px-md-5"> Programmers often do stuff for fun, with no direct use to the community and sometimes they
+            changes the world fuelled
+            with coffee and programming jokes. I wanted the Digital vitae studio to be the safe home for all developers crush
+            projects because wether or not they make money, they sure nourish the mind of people somewhere on the earth.</div>
+        </div>
+        <div class="h2 quote-down text-right">”</div>
+      </div>
+  </div>
+</div>
+
+<div class="py-4"></div>
+
+<!--OUR PROJECTS SECTION-->
+<div class="container-fluid">
+  <div class="row pb-5 d-flex justify-content-center align-items-center">
+    <div class="col-2 h-line"></div>
+    <div class="col-6 col-md-4">
+      <div class="h3 text-center px-2">Our projects</div>
+    </div>
+    <div class="col-2 h-line"></div>
+  </div>
+</div>
+
+<div class="row pt-2 d-flex justify-content-center flex-column flex-md-row align-items-center">
+  <div class="col-8 col-sm-4 col-md-3 col-xl-2 mx-4 my-4 my-md-0">
+    <div class="card-flag visibility-hidden">
+       <span>comming up!</span>
+    </div>
+
+    <div class="theme-card">
+      <div class="d-flex flex-column">
+        <div class="h4 pb-3">What did you sayy?</div>
+        <div class="pb-3">A much needed french version of an English classic website concept.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8 col-sm-4 col-md-3 col-xl-2 mx-4 my-4 my-md-0">
+    <span class="card-flag">comming up!</span>
+    <div class="theme-card">
+      <div class="d-flex flex-column">
+        <div class="h4 pb-3">What did you sayy?</div>
+        <div class="pb-3">A much needed french version of an English classic website concept.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-8 col-sm-4 col-md-3 col-xl-2 mx-4 my-4 my-md-0">
+    <span class="card-flag">comming up!</span>
+    <div class="theme-card">
+      <div class="d-flex flex-column">
+        <div class="h4 pb-3">What did you sayy?</div>
+        <div class="pb-3">A much needed french version of an English classic website concept.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-5"></div>
+<div class="py-5"></div>
+<div class="py-5"></div>
+
+<!--ABOUT THE STUDIO SECTION-->
+
+<div class="container pt-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-11 col-md-10 section-card">
+      <div class="h3 pt-4 px-4">About the studio..</div>
+      <div class="logo py-5 my-5"></div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 px-4">
+          Here in Digital Vitae Studio we aim on letting every one give life to that one idea in their head, wether it will change
+          the world or just be a meme on reddit
+
+          If you want to be part of the journey, contact me here !
+        </div>
+        <div class="col-12 col-md-6 px-4">
+          Here in Digital Vitae Studio we aim on letting every one give life to that one idea in their head, wether it will change
+          the world or just be a meme on reddit
+
+          If you want to be part of the journey, contact me here !
+        </div>
+        <div class="col-12 pt-5 d-flex flex-column justify-content-center align-items-center">
+          You want to be a part of the journey?
+          <div class="btn-accent mt-4">Join !</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="py-5"></div>

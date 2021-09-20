@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="204" viewBox="0 0 1920 204">
+  <defs>
+    <filter id="Tracé_23">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-color="#4e1525" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_33">
+      <rect width="1920" height="204"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_33" data-name="Web 1920 – 33" clip-path="url(#clip-Web_1920_33)">
+    <g data-type="innerShadowGroup">
+      <path id="Tracé_23-2" data-name="Tracé 23" d="M1106.4,48.482c216.807,12.481,879,123.258,924.906,130.838,465.751,76.9,477.845,131.452,477.845,229.926,0,151.708-29.364,242.721-389.877,277.5-182.478,17.6-808.032-2.192-1020.452-2.192-343.918,0-785.229,66.888-1051.475-5.126S-101.113,356.1-44.833,316.539C.949,284.36,181.41,159.61,412.242,97.3,638,36.36,912.375,37.312,1106.4,48.482Z" transform="translate(-118.345 -70.369) rotate(2)" fill="#1c172e"/>
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_23)">
+        <path id="Tracé_23-3" data-name="Tracé 23" d="M1106.4,48.482c216.807,12.481,879,123.258,924.906,130.838,465.751,76.9,477.845,131.452,477.845,229.926,0,151.708-29.364,242.721-389.877,277.5-182.478,17.6-808.032-2.192-1020.452-2.192-343.918,0-785.229,66.888-1051.475-5.126S-101.113,356.1-44.833,316.539C.949,284.36,181.41,159.61,412.242,97.3,638,36.36,912.375,37.312,1106.4,48.482Z" transform="translate(-118.34 -70.37) rotate(2)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

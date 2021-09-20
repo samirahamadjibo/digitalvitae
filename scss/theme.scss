@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://use.typekit.net/xki3oba.css");
+@import url("https://p.typekit.net/p.css?s=1&k=xki3oba&ht=tk&f=31663&a=51792366&app=typekit&e=css");
+
+@font-face {
+  font-family: "Didot";
+  src: url("../src/assets/fonts/Didot.ttc") format("truetype"),
+ }
+
+// Grid, Gutters & Spacers
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$primary: #1F1D2F;
+$secondary: #501F36;
+$tertiary: #712221;
+$accent: #F6BE56;
+
+$secondary-shadow: #412020;
+
+// Body
+$body-bg:    $primary;
+$body-color: white ;
+
+
+// Typography
+$font-family-sans-serif: 'Quicksand', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+$font-family-headings: 'bely-display', 'Didot', 'Quicksand', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+$font-family-subheadings: 'Didot', 'Quicksand', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+
+$font-size-base:              1rem !default;
+$font-size-sm:                $font-size-base * .875 !default;
+$font-weight-light:           100;
+$font-weight-normal:          200;
+$font-weight-bold:            400;
+
+
+$headings-font-family:        $font-family-headings;
+$headings-font-weight:        $font-weight-bold;
+
+
+$h1-font-size:                $font-size-base * 5;
+$h2-font-size:                $font-size-base * 4;
+
+
+
+// Buttons + Forms
+$input-btn-font-family:      $font-family-sans-serif;
+$border-width:                1px ;
+$border-radius:               .25rem !default;
+$input-btn-focus-box-shadow:  null;
+$input-btn-focus-color:      rgba(255, 255, 255, 0.247);
+$input-btn-padding-y:         .375rem;
+$input-btn-padding-x:         1rem;
+
+
+$input-btn-padding-y-sm:      .25rem !default;
+$input-btn-padding-x-sm:      .5rem !default;
+$input-border-color:          rgba(255, 255, 255, 0.445);
+
+
+$link-hover-decoration:       none;
+
+
+
+.fs-sm{
+  font-size: 0.75 % $font-size-base;
+}
+
+.subheading{
+  font-family: $font-family-subheadings !important;
+  font-weight: 100;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// btns
+
+.btn, .btn-secondary, .btn-stroked, .btn-primary, .btn-accent{
+  border-radius: 50px !important;
+  background-color: none !important;
+  color: white !important;
+  cursor: pointer !important;
+  padding: 6px 25px !important;
+  font-size: .9 * $font-size-base;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.btn-stroked{
+  @extend .btn;
+  border: 1px solid white !important;
+  text-transform: none !important;
+  letter-spacing: 0px !important;
+}
+
+.btn-primary{
+  background-color: $primary;
+}
+.btn-secondary{
+  background-color: $secondary;
+}
+.btn-accent{
+  background-color: $accent;
+  color: black !important;
+}
+
+// forms
